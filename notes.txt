@@ -1,0 +1,39 @@
+-*- org -*-
+
+* Pending changes
+
+** @pitch is too green.  Put in icons of sports?
+
+** Roads are too light.
+
+** Main roads:
+
+Paved roads are yellow with black casing.
+
+Unpaved roads should be white with black casing.
+
+** Streets:
+
+Paved: white with black casing.
+
+Unpaved: white with black casing - how to differentiate from paved
+roads?
+
+** Cemetery is perhaps too green; it needs a marker.
+
+** Churches need icon
+
+** Since buildings are black, make POI icons red?
+
+* Pending exploration
+
+Which ways are paths, which are tracks?
+
+* Mapbox issues
+
+'surface' tag - is it not available?  On a highway=tertiary - https://www.openstreetmap.org/way/233417484
+
+mtb:scale, smoothness, surface, tracktype - not available?  https://www.openstreetmap.org/way/346946811
+
+Industrial areas not imported?
+https://www.openstreetmap.org/way/224886516 and screenshots
