@@ -305,18 +305,7 @@ Map {
 // Buildings //
 
 #building {
-  ::shadow[zoom>=16] {
-    line-clip: false;
-    line-join: round;
-    line-cap: round;
-    line-color: fadeout(#000, 85%);
-    [zoom>=17] { line-width: 2; }
-  }
-  polygon-clip: false;
-  polygon-fill: @land * 0.95;
-  [zoom>=16] {
-    polygon-geometry-transform: translate(-0.5,-1.2);
-  }
+  polygon-fill: @builtup;
 }
 
 #barrier_line {
