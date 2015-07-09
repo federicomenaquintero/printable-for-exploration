@@ -17,10 +17,10 @@
 @main_case_width_z17: 13;
 @main_case_width_z18: 15;
 
-@main_line_width_z12: 1;
-@main_line_width_z13: 1.5;
-@main_line_width_z14: 2;
-@main_line_width_z15: 3;
+@main_line_width_z12: 1.5;
+@main_line_width_z13: 2;
+@main_line_width_z14: 2.5;
+@main_line_width_z15: 3.5;
 @main_line_width_z16: 6;
 @main_line_width_z17: 10;
 @main_line_width_z18: 12;
