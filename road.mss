@@ -52,6 +52,14 @@
 @service_case: #000000;
 @service: @street_paved;
 
+/* Tracks and paths */
+
+@track_case: #ffffff;
+@track:      #000000;
+
+@path_case: #ffffff;
+@path:      #000000;
+
 #road,
 #tunnel,
 #bridge {
