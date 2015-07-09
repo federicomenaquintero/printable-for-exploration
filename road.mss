@@ -3,9 +3,29 @@
 @motorway_case: #fff;
 @motorway: #e8b0b0 * 0.9;
 
+/* Main roads */
+
 @main_case: #000000;
 @main_paved: #ffe51b;
 @main_unpaved: #ffffff;
+
+@main_case_width_z12: 3;
+@main_case_width_z13: 3.5;
+@main_case_width_z14: 4;
+@main_case_width_z15: 5.5;
+@main_case_width_z16: 9;
+@main_case_width_z17: 13;
+@main_case_width_z18: 15;
+
+@main_line_width_z12: 1;
+@main_line_width_z13: 1.5;
+@main_line_width_z14: 2;
+@main_line_width_z15: 3;
+@main_line_width_z16: 6;
+@main_line_width_z17: 10;
+@main_line_width_z18: 12;
+
+/* Streets */
 
 @street_case: @land * 0.8;
 @street: #fff;
@@ -85,25 +105,25 @@
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
       line-width: 0.4;
-      [zoom>=12] { line-width: 3; }
-      [zoom>=13] { line-width: 3.5; }
-      [zoom>=14] { line-width: 4; }
-      [zoom>=15] { line-width: 5.5; }
-      [zoom>=16] { line-width: 9; }
-      [zoom>=17] { line-width: 13; }
-      [zoom>=18] { line-width: 15; }
+      [zoom>=12] { line-width: @main_case_width_z12; }
+      [zoom>=13] { line-width: @main_case_width_z13; }
+      [zoom>=14] { line-width: @main_case_width_z14; }
+      [zoom>=15] { line-width: @main_case_width_z15; }
+      [zoom>=16] { line-width: @main_case_width_z16; }
+      [zoom>=17] { line-width: @main_case_width_z17; }
+      [zoom>=18] { line-width: @main_case_width_z18; }
     }
     ::fill[zoom>=12] {
       line-color: @main_paved;
       line-cap: round;
       #tunnel { line-color: mix(@main_paved,@land,50); }
-      [zoom>=12] { line-width: 1; }
-      [zoom>=13] { line-width: 1.5; }
-      [zoom>=14] { line-width: 2; }
-      [zoom>=15] { line-width: 3; }
-      [zoom>=16] { line-width: 6; }
-      [zoom>=17] { line-width: 10; }
-      [zoom>=18] { line-width: 12; }
+      [zoom>=12] { line-width: @main_line_width_z12; }
+      [zoom>=13] { line-width: @main_line_width_z13; }
+      [zoom>=14] { line-width: @main_line_width_z14; }
+      [zoom>=15] { line-width: @main_line_width_z15; }
+      [zoom>=16] { line-width: @main_line_width_z16; }
+      [zoom>=17] { line-width: @main_line_width_z17; }
+      [zoom>=18] { line-width: @main_line_width_z18; }
     }
   }
   [class='street']['mapnik::geometry_type'=2],
