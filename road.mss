@@ -1,6 +1,7 @@
 // Roads & Railways //
 
-@case: #fff;
+@motorway_case: #fff;
+@main_case: #fff;
 
 @motorway: #e8b0b0 * 0.9;
 @main: #d8b8b0;
@@ -21,7 +22,7 @@
 #bridge {
   [class='motorway']['mapnik::geometry_type'=2], {
     ::case[zoom>=6] {
-      line-color: @case;
+      line-color: @motorway_case;
       [zoom<=9] { line-color: @motorway; }
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
@@ -53,7 +54,7 @@
   }
   [class='motorway_link']['mapnik::geometry_type'=2], {
     ::case {
-      line-color: @case;
+      line-color: @motorway_case;
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
       [zoom>=12] { line-width: 2.8; }
@@ -73,7 +74,7 @@
   }
   [class='main']['mapnik::geometry_type'=2] {
     ::case[zoom>=6] {
-      line-color: @case;
+      line-color: @main_case;
       [zoom<=11] { line-color: @main; }
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
