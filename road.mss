@@ -2,6 +2,7 @@
 
 @motorway_case: #fff;
 @main_case: #fff;
+@street_case: @land * 0.8;
 
 @motorway: #e8b0b0 * 0.9;
 @main: #d8b8b0;
@@ -103,7 +104,7 @@
   [class='street']['mapnik::geometry_type'=2],
   [class='street_limited']['mapnik::geometry_type'=2] {
     ::case[zoom>=12] {
-      line-color: @land * 0.8;
+      line-color: @street_case;
       line-opacity: 0.5;
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
