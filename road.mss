@@ -54,11 +54,16 @@
 
 /* Tracks and paths */
 
-@track_case: #ffffff;
-@track:      #000000;
+@track: #000000;
+@track_width_z13: 2;
+@track_width_z14: 2;
+@track_width_z15: 2;
+@track_width_z16: 2;
+@track_width_z17: 2;
+@track_width_z18: 2;
 
 @path_case: #ffffff;
-@path:      #000000;
+@path:  #000000;
 
 #road,
 #tunnel,
@@ -183,10 +188,9 @@
   [class='service']['mapnik::geometry_type'=2][type!='track'] {
     ::case[zoom>=13] {
       line-color: @service_case;
-      line-opacity: 0.04;
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
-      [zoom=13] { line-opacity: 0.5; }
+      [zoom>=13] { line-width: 2; }
       [zoom>=14] { line-width: 3; }
       [zoom>=15] { line-width: 3.5; }
       [zoom>=16] { line-width: 4; }
@@ -197,6 +201,7 @@
       line-color: @service;
       #road { line-cap: round; }
       #tunnel { line-color: mix(@service,@land,50); }
+      [zoom>=13] { line-width: 1; }
       [zoom>=14] { line-width: 1; }
       [zoom>=15] { line-width: 1.5; }
       [zoom>=16] { line-width: 2; }
@@ -204,14 +209,24 @@
       [zoom>=18] { line-width: 4; }
     }
   }
+  [class='service'][type='track'] {
+    line-color: @track;
+    [zoom>=13] { line-width: @track_width_z13; }
+    [zoom>=14] { line-width: @track_width_z14; }
+    [zoom>=15] { line-width: @track_width_z15; }
+    [zoom>=16] { line-width: @track_width_z16; }
+    [zoom>=17] { line-width: @track_width_z17; }
+    [zoom>=18] { line-width: @track_width_z18; }
+  }
   [class='path'][type!='steps'] {
     #bridge::mask[zoom>=16] {
       line-color: #8f8880;
       line-width: 6;
     }
     ::case[zoom>=14]['mapnik::geometry_type'=2] {
-      line-color: #ffd;
-      line-opacity: 0.5;
+      [class='path'] {
+        line-color: @path_case;
+      }
       #bridge { line-opacity: 1; }
       line-join: round;
       line-width: 2;
