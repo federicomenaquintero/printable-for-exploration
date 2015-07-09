@@ -31,16 +31,18 @@
 @street_paved: #ffffff;
 @street_unpaved: #ffffff;
 
-@street_case_width_z13: 4;
-@street_case_width_z14: 4;
-@street_case_width_z15: 5;
+@street_case_width_z12: 0.5;
+@street_case_width_z13: 2;
+@street_case_width_z14: 3;
+@street_case_width_z15: 4.5;
 @street_case_width_z16: 7;
 @street_case_width_z17: 9;
 @street_case_width_z18: 11;
 
-@street_line_width_z13: 1.2;
-@street_line_width_z14: 1.6;
-@street_line_width_z15: 2.5;
+// No line width for z12 as it is too small
+@street_line_width_z13: 1;
+@street_line_width_z14: 2;
+@street_line_width_z15: 3;
 @street_line_width_z16: 4;
 @street_line_width_z17: 6;
 @street_line_width_z18: 8;
@@ -149,6 +151,7 @@
       line-color: @street_case;
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
+      [zoom>=12] { line-width: @street_case_width_z12; }
       [zoom>=13] { line-width: @street_case_width_z13; }
       [zoom>=14] { line-width: @street_case_width_z14; }
       [zoom>=15] { line-width: @street_case_width_z15; }
