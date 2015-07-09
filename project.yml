@@ -1,5 +1,6 @@
 _prefs: 
   baselayer: ''
+  mapid: federicomenaquintero.d9dedff5
   print: true
   saveCenter: false
 _properties: {}
@@ -13,7 +14,7 @@ center:
   - 0
   - 20
   - 2
-description: ''
+description: This is closer to ca. 1960 Ordnance Survey styling; intended for printing.
 format: "png8:m=h:c=128"
 interactivity_layer: ''
 layers: 
@@ -44,7 +45,7 @@ layers:
   - contour.label
 maxzoom: 21
 minzoom: 0
-name: Mapbox Outdoors
+name: Mapbox Outdoors modified for printing
 source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
