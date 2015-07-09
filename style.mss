@@ -11,13 +11,13 @@
 @rock: #ddd;
 @sand: mix(#ffd,@land,33%);
 // These colors need to take `comp-op:multiply` into account:
-@cemetery: #edf4ed;
-@pitch: fadeout(#fff,50%);
-@park: #edf9e4;
+@cemetery: #48b548;
+@pitch: #4eb237;
+@park: #8aff32;
 @piste: mix(blue,@land,5);
-@school: #fbf6ff;
-@hospital: #fff0f0;
-@builtup: #f6faff;
+@school: #000000;
+@hospital: #000000;
+@builtup: #000000;
 
 // Background //
 
