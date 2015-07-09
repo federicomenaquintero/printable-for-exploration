@@ -55,12 +55,12 @@
 /* Tracks and paths */
 
 @track: #000000;
-@track_width_z13: 2;
-@track_width_z14: 2;
+@track_width_z13: 1;
+@track_width_z14: 1;
 @track_width_z15: 2;
 @track_width_z16: 2;
-@track_width_z17: 2;
-@track_width_z18: 2;
+@track_width_z17: 3;
+@track_width_z18: 4;
 
 @path_case: #ffffff;
 @path:  #000000;
