@@ -27,11 +27,14 @@
 
 /* Streets */
 
-@street_case: @land * 0.8;
-@street: #fff;
+@street_case: #000000;
+@street_paved: #ffffff;
+@street_unpaved: #ffffff;
+
+/* Service roads */
 
 @service_case: #000000;
-@service: @street;
+@service: @street_paved;
 
 #road,
 #tunnel,
@@ -141,9 +144,9 @@
       [zoom>=18] { line-width: 11; }
     }
     ::fill[zoom>=13] {
-      line-color: @street;
+      line-color: @street_paved;
       #road { line-cap: round; }
-      #tunnel { line-color: mix(@street,@land,50); }
+      #tunnel { line-color: mix(@street_paved,@land,50); }
       [class='street_limited'] { line-dasharray: 6,1; }
       [zoom>=13] { line-width: 1.2; }
       [zoom>=14] { line-width: 1.6; }
@@ -169,7 +172,7 @@
     ::fill[zoom>=13] {
       line-color: @service;
       #road { line-cap: round; }
-      #tunnel { line-color: mix(@street,@land,50); }
+      #tunnel { line-color: mix(@service,@land,50); }
       [zoom>=14] { line-width: 1; }
       [zoom>=15] { line-width: 1.5; }
       [zoom>=16] { line-width: 2; }
