@@ -180,7 +180,7 @@
       [zoom>=18] { line-width: @street_line_width_z18; }
     }
   }
-  [class='service']['mapnik::geometry_type'=2] {
+  [class='service']['mapnik::geometry_type'=2][type!='track'] {
     ::case[zoom>=13] {
       line-color: @service_case;
       line-opacity: 0.04;
