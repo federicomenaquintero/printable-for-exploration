@@ -3,8 +3,9 @@
 @motorway_case: #fff;
 @motorway: #e8b0b0 * 0.9;
 
-@main_case: #fff;
-@main: #d8b8b0;
+@main_case: #000000;
+@main_paved: #ffe51b;
+@main_unpaved: #ffffff;
 
 @street_case: @land * 0.8;
 @street: #fff;
@@ -80,7 +81,7 @@
   [class='main']['mapnik::geometry_type'=2] {
     ::case[zoom>=6] {
       line-color: @main_case;
-      [zoom<=11] { line-color: @main; }
+      [zoom<=11] { line-color: @main_paved; }
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
       line-width: 0.4;
@@ -93,9 +94,9 @@
       [zoom>=18] { line-width: 15; }
     }
     ::fill[zoom>=12] {
-      line-color: @main;
+      line-color: @main_paved;
       line-cap: round;
-      #tunnel { line-color: mix(@main,@land,50); }
+      #tunnel { line-color: mix(@main_paved,@land,50); }
       [zoom>=12] { line-width: 1; }
       [zoom>=13] { line-width: 1.5; }
       [zoom>=14] { line-width: 2; }
