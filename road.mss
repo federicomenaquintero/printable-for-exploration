@@ -8,6 +8,7 @@
 @motorway: #e8b0b0 * 0.9;
 @main: #d8b8b0;
 @street: #fff;
+@service: @street;
 
 #road,
 #tunnel,
@@ -143,7 +144,7 @@
       [zoom>=18] { line-width: 6; }
     }
     ::fill[zoom>=13] {
-      line-color: @street;
+      line-color: @service;
       #road { line-cap: round; }
       #tunnel { line-color: mix(@street,@land,50); }
       [zoom>=14] { line-width: 1; }
