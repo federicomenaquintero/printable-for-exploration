@@ -71,8 +71,8 @@
 @path_case_width_z18: 4;
 
 @path_line_width_z14: 1;
-@path_line_width_z15: 2;
-@path_line_width_z16: 2.5;
+@path_line_width_z15: 1;
+@path_line_width_z16: 2;
 @path_line_width_z17: 2;
 @path_line_width_z18: 3;
 
