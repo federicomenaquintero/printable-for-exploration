@@ -1,13 +1,15 @@
 // Roads & Railways //
 
 @motorway_case: #fff;
-@main_case: #fff;
-@street_case: @land * 0.8;
-@service_case: #000000;
-
 @motorway: #e8b0b0 * 0.9;
+
+@main_case: #fff;
 @main: #d8b8b0;
+
+@street_case: @land * 0.8;
 @street: #fff;
+
+@service_case: #000000;
 @service: @street;
 
 #road,
