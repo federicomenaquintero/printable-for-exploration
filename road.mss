@@ -133,7 +133,6 @@
   [class='street_limited']['mapnik::geometry_type'=2] {
     ::case[zoom>=12] {
       line-color: @street_case;
-      line-opacity: 0.5;
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
       [zoom>=13] { line-width: 4; }
