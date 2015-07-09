@@ -4,9 +4,17 @@
 
 ** @pitch is too green.  Put in icons of sports?
 
-** Roads are too light.
+** Motorway
 
-** Main roads:
+Should be red with black casing
+
+** Main roads class=main:
+
+*** type='trunk', type='primary', type='secondary':
+
+Check Ordnance Survey; these have black casing and are red or brown.
+
+
 
 Paved roads are yellow with black casing.
 
