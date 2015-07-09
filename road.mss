@@ -7,7 +7,7 @@
 
 @main_case: #000000;
 @main_paved: #ffe51b;
-@main_unpaved: #ffffff;
+@main_unpaved: #b7b7b7;
 
 @main_case_width_z12: 3;
 @main_case_width_z13: 3.5;
@@ -29,7 +29,7 @@
 
 @street_case: #000000;
 @street_paved: #ffffff;
-@street_unpaved: #ffffff;
+@street_unpaved: #b7b7b7;
 
 @street_case_width_z12: 0.5;
 @street_case_width_z13: 2;
@@ -182,6 +182,7 @@
     }
     ::fill[zoom>=12] {
       line-color: @main_paved;
+      [surface='unpaved'] { line-color: @main_unpaved; }
       line-cap: round;
       #tunnel { line-color: mix(@main_paved,@land,50); }
       [zoom>=12] { line-width: @main_line_width_z12; }
@@ -209,6 +210,7 @@
     }
     ::fill[zoom>=13] {
       line-color: @street_paved;
+      [surface='unpaved'] { line-color: @street_unpaved; }
       #road { line-cap: round; }
       #tunnel { line-color: mix(@street_paved,@land,50); }
       [class='street_limited'] { line-dasharray: 6,1; }
