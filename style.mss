@@ -18,6 +18,8 @@
 @school: #000000;
 @hospital: #000000;
 @builtup: #000000;
+@greenhouse: #ffffff;
+@greenhouse_outline: #000000;
 
 // Background //
 
@@ -306,6 +308,11 @@ Map {
 
 #building {
   polygon-fill: @builtup;
+  [building='greenhouse'] {
+    polygon-fill: @greenhouse;
+    line-color: @greenhouse_outline;
+    line-width: 4;
+  }
 }
 
 #barrier_line {
