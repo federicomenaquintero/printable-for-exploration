@@ -52,3 +52,5 @@ https://www.openstreetmap.org/way/224886516 and screenshots
 
 building=greenhouse is not imported; these are just available as
 buildings.  E.g. https://www.openstreetmap.org/way/346951243
+
+power lines and power towers are not imported
