@@ -1,5 +1,10 @@
 // Roads & Railways //
 
+@railway: #000000;
+@railway_line_width: 1;
+@railway_hatch_width: 4;
+@railway_hatch_pattern: 1,15;
+
 @motorway_case: #fff;
 @motorway: #e8b0b0 * 0.9;
 
@@ -335,11 +340,11 @@
     }
   }
   [class='major_rail'] {
-    line-width: 0.8;
-    line-color: #c8c4c0;
-    hatch/line-width: 3;
-    hatch/line-color: #c8c4c0;
-    hatch/line-dasharray: 1,15;
+    line-width: @railway_line_width;
+    line-color: @railway;
+    hatch/line-width: @railway_hatch_width;
+    hatch/line-color: @railway;
+    hatch/line-dasharray: @railway_hatch_pattern;
   }
 }
 
