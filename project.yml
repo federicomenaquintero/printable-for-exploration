@@ -11,11 +11,11 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 0
-  - 20
-  - 2
+  - -96.9098
+  - 19.4576
+  - 14
 description: This is closer to ca. 1960 Ordnance Survey styling; intended for printing.
-format: "png8:m=h:c=128"
+format: png24
 interactivity_layer: ''
 layers: 
   - landcover

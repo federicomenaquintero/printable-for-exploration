@@ -29,23 +29,23 @@
 @place_halo:        fadeout(#fff,80);
 @country_text:      @land * 0.2;
 @country_halo:      @place_halo;
-@state_text:        #666;
+@state_text:        #000;
 @state_halo:        @place_halo;
-@city_text:         #4a4032;
+@city_text:         #000;
 @city_halo:         @place_halo;
-@town_text:         lighten(#4a4032,10);
+@town_text:         #000;
 @town_halo:         @place_halo;
 @poi_text:          @poi_text;  
-@road_text:         #4a4032;
+@road_text:         #000;
 @road_halo:         #fff;
-@other_text:        lighten(#4a4032,20);
+@other_text:        #000;
 @other_halo:        @place_halo;
-@locality_text:     #aaa;
+@locality_text:     #000;
 @locality_halo:     @land;
 // Also used for other small places: hamlets, suburbs, localities:
-@village_text:      #888;
+@village_text:      #000;
 @village_halo:      @place_halo;
-@transport_text:    #445;
+@transport_text:    #000;
 
 
 // =====================================================================
@@ -392,7 +392,7 @@
   text-line-spacing: -4;
   text-min-distance: 15;
   [zoom>=13] { text-min-distance: 4; }
-  text-size: 12;
+  text-size: 16;
   [zoom>=11] { text-size: 14; text-min-distance: 18; }
   [zoom>=12] { text-size: 15; text-wrap-width: 80; }
   [zoom>=13] { text-size: 16; text-wrap-width: 120; }
@@ -408,7 +408,7 @@
   text-face-name: @sans;
   text-placement: point;
   text-fill: @town_text;
-  text-size: 11;
+  text-size: 14;
   text-halo-fill: @town_halo;
   text-halo-radius: 2;
   text-halo-rasterizer: fast;
@@ -416,12 +416,12 @@
   text-wrap-before: true;
   text-min-distance: 40;
   text-line-spacing: -4;
-  [zoom>=12] { text-size: 12; }
+  [zoom>=12] { text-size: 16; }
   [zoom>=13] { text-wrap-width: 80; }
-  [zoom>=14] { text-size: 14; text-wrap-width: 100; }
-  [zoom>=15] { text-size: 16; text-wrap-width: 120; }
-  [zoom>=16] { text-size: 18; text-wrap-width: 160; }
-  [zoom=17] { text-size: 20; text-wrap-width: 200; }
+  [zoom>=14] { text-size: 18; text-wrap-width: 100; }
+  [zoom>=15] { text-size: 20; text-wrap-width: 120; }
+  [zoom>=16] { text-size: 22; text-wrap-width: 160; }
+  [zoom=17] { text-size: 24; text-wrap-width: 200; }
 }
 
 // Suburbs _____________________________________________________________
@@ -431,7 +431,7 @@
   text-face-name: @sans_lt;
   text-placement: point;
   text-fill: @other_text;
-  text-size: 11;
+  text-size: 14;
   text-halo-fill: @other_halo;
   text-halo-radius: 1.5;
   text-halo-rasterizer: fast;
@@ -440,11 +440,11 @@
   text-min-distance: 4;
   text-line-spacing: -2;
   [zoom=12] { text-min-distance: 30; }
-  [zoom>=13] { text-size: 12; text-min-distance: 20; }
-  [zoom>=14] { text-size: 13; text-wrap-width: 80; }
-  [zoom>=15] { text-size: 14; text-wrap-width: 120; }
-  [zoom>=16] { text-size: 16; text-wrap-width: 160; }
-  [zoom>=17] { text-size: 20; text-wrap-width: 200; }
+  [zoom>=13] { text-size: 16; text-min-distance: 20; }
+  [zoom>=14] { text-size: 17; text-wrap-width: 80; }
+  [zoom>=15] { text-size: 18; text-wrap-width: 120; }
+  [zoom>=16] { text-size: 20; text-wrap-width: 160; }
+  [zoom>=17] { text-size: 24; text-wrap-width: 200; }
 }
 
 // Neighbourhoods & Hamlets ____________________________________________
@@ -456,7 +456,7 @@
     text-face-name: @sans_lt;
     text-placement: point;
     text-fill: @other_text;
-    text-size: 11;
+    text-size: 14;
     text-halo-fill: @other_halo;
     text-halo-radius: 1.5;
     text-halo-rasterizer: fast;
@@ -464,10 +464,10 @@
     text-wrap-before: true;
     text-min-distance: 4;
     text-line-spacing: -2;
-    [zoom>=14] { text-size: 12; text-wrap-width: 80; }
-    [zoom>=16] { text-size: 14; text-wrap-width: 100; }
-    [zoom>=17] { text-size: 16; text-wrap-width: 130; }
-    [zoom>=18] { text-size: 18; text-wrap-width: 160; }
+    [zoom>=14] { text-size: 16; text-wrap-width: 80; }
+    [zoom>=16] { text-size: 18; text-wrap-width: 100; }
+    [zoom>=17] { text-size: 20; text-wrap-width: 130; }
+    [zoom>=18] { text-size: 24; text-wrap-width: 160; }
   }
 }
 
