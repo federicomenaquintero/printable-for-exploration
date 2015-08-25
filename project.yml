@@ -46,7 +46,7 @@ layers:
 maxzoom: 21
 minzoom: 0
 name: Mapbox Outdoors modified for printing
-source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"
 styles: 
   - style.mss
   - road.mss
