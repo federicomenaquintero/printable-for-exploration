@@ -204,10 +204,10 @@ Map {
 
 #contour.line::line[index!=-1] {
   line-color: #000;
-  line-opacity: 0.3;
+  line-opacity: 0.1;
   line-width: 1.2;
   [index>=5] {
-    line-opacity: 0.5;
+    line-opacity: 0.2;
     line-width: 1.2;
   }
 }
@@ -219,7 +219,7 @@ Map {
     text-name: "[ele]+' m'";
     text-face-name: 'Open Sans Regular';
     text-placement: line;
-    text-size: 14;
+    text-size: 10;
     text-fill: #000;
     text-avoid-edges: true;
     text-halo-fill: fadeout(@crop,80%);

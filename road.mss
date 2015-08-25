@@ -39,14 +39,14 @@
 @street_case_width_z12: 0.5;
 @street_case_width_z13: 2;
 @street_case_width_z14: 3;
-@street_case_width_z15: 4.5;
+@street_case_width_z15: 5;
 @street_case_width_z16: 7;
 @street_case_width_z17: 9;
 @street_case_width_z18: 11;
 
 // No line width for z12 as it is too small
 @street_line_width_z13: 1;
-@street_line_width_z14: 2;
+@street_line_width_z14: 1.5;
 @street_line_width_z15: 3;
 @street_line_width_z16: 4;
 @street_line_width_z17: 6;
@@ -61,8 +61,8 @@
 
 @track: #000000;
 @track_width_z13: 1;
-@track_width_z14: 1;
-@track_width_z15: 2;
+@track_width_z14: 0.75;
+@track_width_z15: 1;
 @track_width_z16: 2;
 @track_width_z17: 3;
 @track_width_z18: 4;
