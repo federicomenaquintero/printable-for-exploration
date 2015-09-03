@@ -37,7 +37,7 @@
 @street_unpaved: #b7b7b7;
 
 @street_case_width_z12: 0.5;
-@street_case_width_z13: 2;
+@street_case_width_z13: 0.5;
 @street_case_width_z14: 2.5;
 @street_case_width_z15: 4;
 @street_case_width_z16: 6;
@@ -45,7 +45,7 @@
 @street_case_width_z18: 11;
 
 // No line width for z12 as it is too small
-@street_line_width_z13: 1;
+@street_line_width_z13: 0;
 @street_line_width_z14: 1.5;
 @street_line_width_z15: 3;
 @street_line_width_z16: 4;
