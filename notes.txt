@@ -30,8 +30,6 @@ Paved: white with black casing.
 Unpaved: white with black casing - how to differentiate from paved
 roads?
 
-** Areas - school grounds, etc. are black.  See ITSX - too black.
-
 ** Cemetery is perhaps too green; it needs a marker.
 
 ** Churches need icon

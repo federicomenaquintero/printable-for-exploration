@@ -15,8 +15,8 @@
 @pitch: #4eb237;
 @park: #8aff32;
 @piste: mix(blue,@land,5);
-@school: #000000;
-@hospital: #000000;
+@school: #a0a0a0;
+@hospital: #a0a0a0;
 @builtup: #000000;
 @greenhouse: #ffffff;
 @greenhouse_outline: #000000;
