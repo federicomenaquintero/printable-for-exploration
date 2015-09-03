@@ -18,8 +18,6 @@ Should be red with black casing
 
 Check Ordnance Survey; these have black casing and are red or brown.
 
-
-
 Paved roads are yellow with black casing.
 
 Unpaved roads should be white with black casing.
@@ -30,6 +28,8 @@ Paved: white with black casing.
 
 Unpaved: white with black casing - how to differentiate from paved
 roads?
+
+** Areas - school grounds, etc. are black.  See ITSX - too black.
 
 ** Cemetery is perhaps too green; it needs a marker.
 
