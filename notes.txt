@@ -10,7 +10,8 @@ Make it more visible.
 
 ** Motorway
 
-Should be red with black casing
+See img/shield/*.png - they need to be redder.  Make the shields have
+a black outline?  How to regenerate these from SVG?
 
 ** Main roads class=main:
 

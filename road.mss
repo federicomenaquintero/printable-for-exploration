@@ -5,8 +5,8 @@
 @railway_hatch_width: 4;
 @railway_hatch_pattern: 1,15;
 
-@motorway_case: #fff;
-@motorway: #e8b0b0 * 0.9;
+@motorway_case: #000000;
+@motorway: #ff0000;
 
 /* Main roads */
 
