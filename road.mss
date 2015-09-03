@@ -38,9 +38,9 @@
 
 @street_case_width_z12: 0.5;
 @street_case_width_z13: 2;
-@street_case_width_z14: 3;
-@street_case_width_z15: 5;
-@street_case_width_z16: 7;
+@street_case_width_z14: 2.5;
+@street_case_width_z15: 4;
+@street_case_width_z16: 6;
 @street_case_width_z17: 9;
 @street_case_width_z18: 11;
 
