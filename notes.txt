@@ -2,12 +2,6 @@
 
 * Pending changes
 
-** @pitch is too green.  Put in icons of sports?
-
-** Railroad
-
-Make it more visible.
-
 ** Motorway
 
 See img/shield/*.png - they need to be redder.  Make the shields have
@@ -32,9 +26,21 @@ roads?
 
 ** Cemetery is perhaps too green; it needs a marker.
 
+** Park is too green.  Needs texture?
+
+** Footways in ITSX at z={15,16,17} are too dense.
+
 ** Churches need icon
 
 ** Since buildings are black, make POI icons red?
+
+** USBI - pitch outlines are weird.
+** @pitch is too green.  Put in icons of sports?
+
+** #landuse [class="parking"] needs special styling - see Playa Crystal
+
+** Plaza Américas - where's the outline?
+
 
 * Pending exploration
 
